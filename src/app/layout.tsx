@@ -8,14 +8,35 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Cori Lucas — Registered Acupuncturist",
+  title: "Cori Lucas R.Ac — Registered Acupuncturist | Halifax & Hammonds Plains, NS",
   description:
-    "Holistic acupuncture and Traditional Chinese Medicine in Halifax and Hammonds Plains, Nova Scotia. Serving the Halifax Regional Municipality.",
+    "Cori Lucas is a Registered Acupuncturist (ATCMANS) offering acupuncture, gua sha, fire cupping, acupressure, and tuina massage in Halifax and Hammonds Plains, Nova Scotia.",
+  keywords: [
+    "acupuncture",
+    "acupuncturist",
+    "Halifax",
+    "Hammonds Plains",
+    "Nova Scotia",
+    "Traditional Chinese Medicine",
+    "TCM",
+    "gua sha",
+    "cupping",
+    "ATCMANS",
+    "Cori Lucas",
+  ],
+  authors: [{ name: "Cori Lucas" }],
+  openGraph: {
+    title: "Cori Lucas R.Ac — Registered Acupuncturist",
+    description:
+      "Holistic acupuncture and Traditional Chinese Medicine in Halifax and Hammonds Plains, Nova Scotia.",
+    type: "website",
+    locale: "en_CA",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
+    <html lang="en-CA" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
