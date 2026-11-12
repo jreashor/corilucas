@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form definitions</title>
+  </head>
+  <body>
+    <!--
+      Netlify discovers forms by scanning static HTML at deploy time. Next.js
+      pages are server-rendered, so this hidden copy registers the form and its
+      fields. Field names here MUST match src/app/components/ContactForm.tsx.
+      The client component POSTs to /__forms.html.
+    -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" type="text" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="topic" type="text" />
+      <textarea name="message"></textarea>
+      <input name="publish-consent" type="checkbox" />
+      <input name="credit-as" type="text" />
+    </form>
+  </body>
+</html>

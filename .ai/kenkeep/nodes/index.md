@@ -11,11 +11,25 @@ okf_version: '0.1'
 _None._
 
 ## Conventions (how we build)
-_None yet._
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) to learn about: The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard. #forms #netlify #contact #testimonials
 
 ## Components (what exists)
-_None yet._
+- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) to learn about: Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo. #hosting #deployment #netlify #dns
 
 ## By topic
 
-_No tags yet._
+### #netlify
+- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
+### #contact
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
+### #deployment
+- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
+### #dns
+- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
+### #forms
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
+### #hosting
+- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
+### #testimonials
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
