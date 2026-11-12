@@ -1,7 +1,7 @@
 ---
 schema_version: 3
-nodes_hash: 'sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
-node_count: 0
+nodes_hash: 'sha256:5ad25137ef9baf38dc1ddc06bd79faae15c76eb99e263f51b86ca6099b655d2d'
+node_count: 2
 ---
 # kenkeep
 
@@ -9,3 +9,9 @@ node_count: 0
 
 ## Branches
 _None._
+
+## Conventions (how we build)
+- Open [**Contact form submits to Netlify Forms via a hidden static form**](nodes/practice-contact-form-uses-netlify-forms.md) to learn about: The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard. #forms #netlify #contact #testimonials
+
+## Components (what exists)
+- Open [**Site is hosted on Netlify at corilucas.ca**](nodes/map-site-is-hosted-on-netlify.md) to learn about: Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo. #hosting #deployment #netlify #dns

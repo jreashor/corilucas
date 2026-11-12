@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "./components/ContactForm";
 
 const services = [
   {
@@ -132,20 +133,21 @@ export default function Home() {
           aria-label="Main navigation"
           className="sticky top-0 z-50 bg-sage-light/80 backdrop-blur-sm border-b border-border"
         >
-          <div className="max-w-5xl mx-auto pr-6 h-[80px] flex items-center justify-between">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 h-[80px] flex items-center justify-between gap-4">
             <a href="#" aria-label="Cori Lucas — return to top">
               <Image
                 src="/images/logo_transparent.png"
                 alt="Cori Lucas logo"
                 width={68}
                 height={68}
-                className="h-16 w-auto m-2"
+                className="h-12 sm:h-16 w-auto my-2 sm:m-2"
               />
             </a>
-            <ul className="flex gap-8 text-xl text-foreground list-none" role="list">
+            <ul className="flex gap-4 sm:gap-8 text-sm sm:text-xl text-foreground list-none" role="list">
               <li><a href="#about" className="hover:text-sage transition-colors">About</a></li>
               <li><a href="#services" className="hover:text-sage transition-colors">Services</a></li>
               <li><a href="#booking" className="hover:text-sage transition-colors">Book</a></li>
+              <li><a href="#contact" className="hover:text-sage transition-colors">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -305,6 +307,26 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </section>
+          {/* Contact */}
+          <section
+            id="contact"
+            aria-labelledby="contact-heading"
+            className="py-24 px-6 bg-sage-light"
+          >
+            <div className="max-w-5xl mx-auto">
+              <h2 id="contact-heading" className="text-3xl font-bold mb-3 text-sage-dark">
+                Get in Touch
+              </h2>
+              <p className="text-foreground/60 mb-10 max-w-2xl">
+                Have a question before booking, or want to share how acupuncture has helped you?
+                Send Cori a message below. Testimonials are always welcome and may be featured on
+                this site with your permission.
+              </p>
+              <div className="max-w-2xl">
+                <ContactForm />
+              </div>
             </div>
           </section>
         </main>
