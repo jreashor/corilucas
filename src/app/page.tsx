@@ -44,6 +44,7 @@ const clinics = [
     street: "26 Ramsgate Lane",
     city: "Halifax",
     province: "NS",
+    phone: "902-420-0033",
     details:
       "Located at Coral Cove Wellness Center, minutes from the main Coral Clinic in Spryfield.",
     href: "https://coral.janeapp.com/#/staff_member/9",
@@ -53,6 +54,7 @@ const clinics = [
     street: "1387 Hammonds Plains Road",
     city: "Hammonds Plains",
     province: "NS",
+    phone: "902-446-4030",
     details:
       "Located in Hammonds Plains, minutes from Bedford, Tantallon, and Lower Sackville.",
     href: "https://thelifehousehammondsplains.janeapp.com/#/staff_member/11",
@@ -101,6 +103,7 @@ const jsonLd = {
         "addressRegion": "NS",
         "addressCountry": "CA",
       },
+      "telephone": "+1-902-420-0033",
       "url": "https://coral.janeapp.com/#/staff_member/9",
       "employee": { "@id": "#cori-lucas" },
     },
@@ -115,6 +118,7 @@ const jsonLd = {
         "addressRegion": "NS",
         "addressCountry": "CA",
       },
+      "telephone": "+1-902-446-4030",
       "url": "https://thelifehousehammondsplains.janeapp.com/#/staff_member/11",
       "employee": { "@id": "#cori-lucas" },
     },
@@ -305,6 +309,16 @@ export default function Home() {
                       >
                         Book Now
                       </a>
+                      <p className="text-center text-sm text-foreground/60">
+                        or call{" "}
+                        <a
+                          href={`tel:+1${clinic.phone.replace(/-/g, "")}`}
+                          aria-label={`Call ${clinic.name} at ${clinic.phone}`}
+                          className="text-sage-dark font-medium hover:underline"
+                        >
+                          {clinic.phone}
+                        </a>
+                      </p>
                     </article>
                   </li>
                 ))}
