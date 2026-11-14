@@ -25,12 +25,31 @@ export const metadata: Metadata = {
     "Cori Lucas",
   ],
   authors: [{ name: "Cori Lucas" }],
+  metadataBase: new URL("https://corilucas.ca"),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Cori Lucas R.Ac — Registered Acupuncturist",
     description:
       "Holistic acupuncture and Traditional Chinese Medicine in Halifax and Hammonds Plains, Nova Scotia.",
     type: "website",
     locale: "en_CA",
+    url: "/",
+    siteName: "Cori Lucas R.Ac",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 750,
+        height: 750,
+        alt: "Cori Lucas R.Ac logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Cori Lucas R.Ac — Registered Acupuncturist",
+    description:
+      "Holistic acupuncture and Traditional Chinese Medicine in Halifax and Hammonds Plains, Nova Scotia.",
+    images: ["/images/logo.png"],
   },
 };
 

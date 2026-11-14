@@ -67,6 +67,8 @@ const jsonLd = {
       "@id": "#cori-lucas",
       "name": "Cori Lucas",
       "jobTitle": "Registered Acupuncturist",
+      "url": "https://corilucas.ca",
+      "image": "https://corilucas.ca/images/cori.png",
       "description":
         "Registered Acupuncturist holding a 2200-hour certification from the College of Acupuncture and Traditional Chinese Medicine in Bedford, Nova Scotia, and a member of ATCMANS.",
       "hasCredential": {
