@@ -205,7 +205,7 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-[#5f7f66]/80" />
+            <div aria-hidden="true" className="absolute inset-0 bg-[#3f5a45]/90" />
             <div className="relative max-w-5xl mx-auto">
               <p className="text-sage-light text-sm uppercase tracking-widest mb-2">
                 Registered Acupuncturist · ATCMANS
@@ -223,7 +223,7 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <p className="text-xl text-white/75 max-w-xl leading-relaxed mb-10">
+                  <p className="text-xl text-white/90 max-w-xl leading-relaxed mb-10">
                     Holistic acupuncture and Traditional Chinese Medicine — supporting your body&apos;s
                     natural ability to heal, restore balance, and maintain long-term wellness.
                   </p>
