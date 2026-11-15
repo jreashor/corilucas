@@ -8,28 +8,22 @@ okf_version: '0.1'
 > This index only orients you; leaves hold the durable guidance. Open at least one relevant leaf before acting.
 
 ## Subfolders
-_None._
+- Load [`design/`](design/index.md) for more information on visual design rules for site imagery and text legibility; read when adding images or styling text over photos.
+- Load [`netlify/`](netlify/index.md) for more information on how the site is hosted and deployed on Netlify and how the contact form is received; read before changing hosting, deployment flow or the contact form.
 
 ## Conventions (how we build)
-- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) to learn about: The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard. #forms #netlify #contact #testimonials
+_None yet._
 
 ## Components (what exists)
-- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) to learn about: Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo. #hosting #deployment #netlify #dns
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) to learn about: Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx. #seo #geo #structured-data #metadata
 
 ## By topic
 
-### #netlify
-- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
-- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
-### #contact
-- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
-### #deployment
-- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
-### #dns
-- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
-### #forms
-- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
-### #hosting
-- Open [**Site is hosted on Netlify at corilucas.ca**](map-site-is-hosted-on-netlify.md) — Production runs on Netlify under corilucas.ca (DNS at Hover); deploy settings live in the Netlify dashboard, not the repo.
-### #testimonials
-- Open [**Contact form submits to Netlify Forms via a hidden static form**](practice-contact-form-uses-netlify-forms.md) — The contact form posts url-encoded data to /__forms.html; that static file registers the form with Netlify. Field names must stay in sync between the two files, and form detection must be enabled in the Netlify dashboard.
+### #geo
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+### #metadata
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+### #seo
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+### #structured-data
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
