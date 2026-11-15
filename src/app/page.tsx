@@ -61,16 +61,46 @@ const clinics = [
   },
 ];
 
+const siteUrl = "https://corilucas.ca";
+const ids = {
+  website: `${siteUrl}/#website`,
+  webpage: `${siteUrl}/#webpage`,
+  person: `${siteUrl}/#cori-lucas`,
+  practice: `${siteUrl}/#practice`,
+  coralCove: `${siteUrl}/#coral-cove`,
+  lifehouse: `${siteUrl}/#the-lifehouse`,
+};
+
+const areasServed = ["Halifax", "Hammonds Plains", "Bedford", "Tantallon", "Lower Sackville"];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": ids.website,
+      "url": siteUrl,
+      "name": "Cori Lucas R.Ac",
+      "inLanguage": "en-CA",
+      "publisher": { "@id": ids.practice },
+    },
+    {
+      "@type": "WebPage",
+      "@id": ids.webpage,
+      "url": siteUrl,
+      "name": "Cori Lucas R.Ac — Registered Acupuncturist | Halifax & Hammonds Plains, NS",
+      "inLanguage": "en-CA",
+      "isPartOf": { "@id": ids.website },
+      "about": { "@id": ids.practice },
+      "primaryImageOfPage": `${siteUrl}/images/cori.png`,
+    },
+    {
       "@type": "Person",
-      "@id": "#cori-lucas",
+      "@id": ids.person,
       "name": "Cori Lucas",
       "jobTitle": "Registered Acupuncturist",
-      "url": "https://corilucas.ca",
-      "image": "https://corilucas.ca/images/cori.png",
+      "url": siteUrl,
+      "image": `${siteUrl}/images/cori.png`,
       "description":
         "Registered Acupuncturist holding a 2200-hour certification from the College of Acupuncture and Traditional Chinese Medicine in Bedford, Nova Scotia, and a member of ATCMANS.",
       "hasCredential": {
@@ -90,38 +120,44 @@ const jsonLd = {
         "Acupressure",
         "Tuina Massage",
       ],
-      "worksFor": [{ "@id": "#coral-cove" }, { "@id": "#the-lifehouse" }],
+      "worksFor": [{ "@id": ids.practice }, { "@id": ids.coralCove }, { "@id": ids.lifehouse }],
     },
     {
       "@type": "MedicalBusiness",
-      "@id": "#coral-cove",
-      "name": "Coral Cove Wellness Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "26 Ramsgate Lane",
-        "addressLocality": "Halifax",
-        "addressRegion": "NS",
-        "addressCountry": "CA",
-      },
-      "telephone": "+1-902-420-0033",
-      "url": "https://coral.janeapp.com/#/staff_member/9",
-      "employee": { "@id": "#cori-lucas" },
+      "@id": ids.practice,
+      "name": "Cori Lucas R.Ac",
+      "description":
+        "Acupuncture and Traditional Chinese Medicine practice of Cori Lucas, Registered Acupuncturist, serving Halifax and Hammonds Plains, Nova Scotia.",
+      "url": siteUrl,
+      "image": `${siteUrl}/images/logo.png`,
+      "founder": { "@id": ids.person },
+      "employee": { "@id": ids.person },
+      "location": [{ "@id": ids.coralCove }, { "@id": ids.lifehouse }],
+      "areaServed": areasServed.map((name) => ({ "@type": "City", name })),
+      "availableService": services.map((service) => ({
+        "@type": "MedicalTherapy",
+        "name": service.name,
+        "description": service.description,
+      })),
     },
-    {
+    ...[
+      { id: ids.coralCove, clinic: clinics[0], telephone: "+1-902-420-0033" },
+      { id: ids.lifehouse, clinic: clinics[1], telephone: "+1-902-446-4030" },
+    ].map(({ id, clinic, telephone }) => ({
       "@type": "MedicalBusiness",
-      "@id": "#the-lifehouse",
-      "name": "The Lifehouse",
+      "@id": id,
+      "name": clinic.name,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1387 Hammonds Plains Road",
-        "addressLocality": "Hammonds Plains",
-        "addressRegion": "NS",
+        "streetAddress": clinic.street,
+        "addressLocality": clinic.city,
+        "addressRegion": clinic.province,
         "addressCountry": "CA",
       },
-      "telephone": "+1-902-446-4030",
-      "url": "https://thelifehousehammondsplains.janeapp.com/#/staff_member/11",
-      "employee": { "@id": "#cori-lucas" },
-    },
+      "telephone": telephone,
+      "url": clinic.href,
+      "employee": { "@id": ids.person },
+    })),
   ],
 };
 
@@ -160,8 +196,17 @@ export default function Home() {
 
         <main id="main-content">
           {/* Hero */}
-          <header className="bg-[#7d9e83] text-white py-20 px-6">
-            <div className="max-w-5xl mx-auto">
+          <header className="relative overflow-hidden bg-[#7d9e83] text-white py-20 px-6">
+            <Image
+              src="/images/leaf-drop.jpg"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover"
+              priority
+            />
+            <div aria-hidden="true" className="absolute inset-0 bg-[#5f7f66]/80" />
+            <div className="relative max-w-5xl mx-auto">
               <p className="text-sage-light text-sm uppercase tracking-widest mb-2">
                 Registered Acupuncturist · ATCMANS
               </p>
