@@ -1,6 +1,6 @@
 ---
 schema_version: 3
-nodes_hash: 'sha256:549e0cbf4d14028472cc472f048aa31453df2efebc277e0e77e50c51ca354bce'
+nodes_hash: 'sha256:fa519cde0ac332bb7e6cf69ee231b04c34e67704fd67f25221d06b8f6b0faf36'
 node_count: 6
 ---
 # kenkeep Graph
@@ -11,7 +11,7 @@ Total nodes: 6
 
 - **kind:** map
 - **title:** SEO and GEO surfaces of the site
-- **path:** map-seo-and-geo-surfaces-of-the-site.md
+- **path:** seo/map-seo-and-geo-surfaces-of-the-site.md
 - **tags:** seo, geo, structured-data, metadata
 - **relates_to:** practice-contact-form-uses-netlify-forms, map-site-is-hosted-on-netlify
 - **derived_from:** 5d216fca-f4a2-4fe8-9211-b6e4743dfb77:map:0

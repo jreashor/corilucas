@@ -1,6 +1,6 @@
 ---
 schema_version: 3
-nodes_hash: 'sha256:549e0cbf4d14028472cc472f048aa31453df2efebc277e0e77e50c51ca354bce'
+nodes_hash: 'sha256:fa519cde0ac332bb7e6cf69ee231b04c34e67704fd67f25221d06b8f6b0faf36'
 node_count: 6
 ---
 # kenkeep
@@ -10,6 +10,4 @@ node_count: 6
 ## Branches
 - Load [`design/`](nodes/design/index.md) for more information on visual design rules for site imagery and text legibility; read when adding images or styling text over photos.
 - Load [`netlify/`](nodes/netlify/index.md) for more information on how the site is hosted and deployed on Netlify and how the contact form is received; read before changing hosting, deployment flow or the contact form.
-
-## Components (what exists)
-- Open [**SEO and GEO surfaces of the site**](nodes/map-seo-and-geo-surfaces-of-the-site.md) to learn about: Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx. #seo #geo #structured-data #metadata
+- Load [`seo/`](nodes/seo/index.md) for more information on where search and AI-discovery files and structured data live; read before changing robots, sitemap, llms.txt, metadata or schema.org JSON-LD.

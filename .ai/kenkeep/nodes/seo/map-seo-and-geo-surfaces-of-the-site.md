@@ -32,8 +32,8 @@ When changing services, clinics, phone numbers or credentials, check that `llms.
 <!-- kk:related:start -->
 # Related
 
-- Related: [practice-contact-form-uses-netlify-forms](netlify/practice-contact-form-uses-netlify-forms.md)
-- Related: [map-site-is-hosted-on-netlify](netlify/map-site-is-hosted-on-netlify.md)
+- Related: [practice-contact-form-uses-netlify-forms](practice-contact-form-uses-netlify-forms.md)
+- Related: [map-site-is-hosted-on-netlify](map-site-is-hosted-on-netlify.md)
 <!-- kk:related:end -->
 
 <!-- kk:citations:start -->
