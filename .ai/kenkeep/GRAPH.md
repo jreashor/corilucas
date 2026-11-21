@@ -1,11 +1,11 @@
 ---
 schema_version: 3
-nodes_hash: 'sha256:fa519cde0ac332bb7e6cf69ee231b04c34e67704fd67f25221d06b8f6b0faf36'
-node_count: 6
+nodes_hash: 'sha256:fd69436d0377b22a839ae8c5e1c47fd4a9a7e7b238e4ef2a5f3267057c1a2b81'
+node_count: 7
 ---
 # kenkeep Graph
 
-Total nodes: 6
+Total nodes: 7
 
 ## map-seo-and-geo-surfaces-of-the-site
 
@@ -30,6 +30,14 @@ Total nodes: 6
 - **path:** netlify/practice-contact-form-uses-netlify-forms.md
 - **tags:** forms, netlify, contact, testimonials
 - **relates_to:** map-site-is-hosted-on-netlify
+
+## practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema
+
+- **kind:** practice
+- **title:** FAQ answers come from the owner and ship with matching FAQPage schema
+- **path:** seo/practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md
+- **tags:** faq, seo, geo, structured-data, content
+- **relates_to:** map-seo-and-geo-surfaces-of-the-site
 
 ## practice-site-images-must-be-cc0-or-public-domain
 

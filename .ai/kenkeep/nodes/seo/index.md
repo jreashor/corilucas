@@ -10,7 +10,7 @@
 _None._
 
 ## Conventions (how we build)
-_None yet._
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) to learn about: Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text. #faq #seo #geo #structured-data #content
 
 ## Components (what exists)
 - Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) to learn about: Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx. #seo #geo #structured-data #metadata
@@ -19,9 +19,16 @@ _None yet._
 
 ### #geo
 - Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
-### #metadata
-- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) — Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text.
 ### #seo
 - Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) — Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text.
 ### #structured-data
+- Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) — Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text.
+### #content
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) — Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text.
+### #faq
+- Open [**FAQ answers come from the owner and ship with matching FAQPage schema**](practice-faq-answers-come-from-the-owner-and-ship-with-matching-faqpage-schema.md) — Cori writes the FAQ answers; the home-page FAQ and its FAQPage JSON-LD must carry identical text.
+### #metadata
 - Open [**SEO and GEO surfaces of the site**](map-seo-and-geo-surfaces-of-the-site.md) — Where search and AI-discovery files live: robots.ts, sitemap.ts, public/llms.txt, layout metadata and the JSON-LD graph in page.tsx.
