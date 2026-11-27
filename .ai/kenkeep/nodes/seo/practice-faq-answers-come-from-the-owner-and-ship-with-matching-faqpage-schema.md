@@ -18,7 +18,7 @@ kk_relates_to:
 kk_depends_on: []
 kk_confidence: high
 ---
-The owner writes the FAQ answers herself; the questions are only suggested, and answers are never drafted for her. Once she supplies them, the FAQ is a section on the home page (`src/app/page.tsx`) with a matching `FAQPage` node added to the existing JSON-LD `@graph`.
+The owner writes the FAQ answers herself; the questions are only suggested, and answers are never drafted for her. The FAQ is a section on the home page, rendered from `src/app/faq.ts`, and the same data feeds a `FAQPage` node in the JSON-LD `@graph`, so the visible text and the schema cannot drift. Edit answers only in `faq.ts`.
 
 The visible text and the schema must match word for word, because search engines treat markup that differs from the visible page as misleading. The FAQ stays on the single home page: the owner declined dedicated per-location and per-service pages, so it is not split across extra routes.
 

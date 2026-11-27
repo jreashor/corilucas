@@ -25,7 +25,8 @@ The site is one page served at https://corilucas.ca, and its search and AI-disco
 - `src/app/sitemap.ts` lists the single home URL.
 - `public/llms.txt` summarises Cori's credentials, services, areas of focus and both clinics (addresses, phone numbers, booking links) for AI crawlers.
 - `src/app/layout.tsx` holds the page metadata: `metadataBase`, canonical `/`, Open Graph and a `summary` Twitter card. The share image is the square `/images/logo.png`.
-- `src/app/page.tsx` embeds one JSON-LD `@graph` built from the same `services` and `clinics` arrays that render the page: `WebSite`, `WebPage`, a `Person` for Cori, a practice `MedicalBusiness` (with `areaServed` towns and an `availableService` per treatment) and a `MedicalBusiness` per clinic. Every node has an absolute `https://corilucas.ca/#...` `@id`, and Cori's `worksFor` lists the practice and both clinics.
+- `src/app/faq.ts` holds the FAQ questions and answers (grouped), rendered by `src/app/components/FaqSection.tsx` and also emitted as the `FAQPage` node in the JSON-LD.
+- `src/app/page.tsx` embeds one JSON-LD `@graph` built from the same `services`, `clinics` and `faqGroups` data that render the page: `WebSite`, `WebPage`, `FAQPage`, a `Person` for Cori, a practice `MedicalBusiness` (with `areaServed` towns and an `availableService` per treatment) and a `MedicalBusiness` per clinic. Every node has an absolute `https://corilucas.ca/#...` `@id`, and Cori's `worksFor` lists the practice and both clinics.
 
 When changing services, clinics, phone numbers or credentials, check that `llms.txt` and the JSON-LD still match the visible page.
 

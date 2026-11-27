@@ -2,7 +2,7 @@
 
 > Cori Lucas is a Registered Acupuncturist (R.Ac) and member of ATCMANS, practicing Traditional Chinese Medicine at two clinics in Halifax and Hammonds Plains, Nova Scotia, Canada.
 
-Cori holds a 2200-hour certification from the College of Acupuncture and Traditional Chinese Medicine in Bedford, Nova Scotia, and is a member of the Association of Traditional Chinese Medicine and Acupuncturists of Nova Scotia (ATCMANS). Her approach is patient-centred: she looks for the root causes of imbalance rather than treating symptoms in isolation, and guides clients through home care practices between sessions. Receipts are provided for insurance claims.
+Cori holds a 2200-hour certification from the College of Acupuncture and Traditional Chinese Medicine in Bedford, Nova Scotia, and is a member of the Acupuncture & Traditional Chinese Medicine Association of Nova Scotia (ATCMANS). Her approach is patient-centred: she looks for the root causes of imbalance rather than treating symptoms in isolation, and guides clients through home care practices between sessions. Receipts are provided for insurance claims.
 
 ## Services
 
@@ -29,3 +29,4 @@ Cori holds a 2200-hour certification from the College of Acupuncture and Traditi
 ## Site
 
 - [Home page](https://corilucas.ca/): about Cori, services, booking links, and a contact form (questions and testimonials welcome).
+- [FAQ](https://corilucas.ca/#faq): answers on what acupuncture treats, needles and safety, what to expect at a visit, insurance and receipts, and Cori's credentials.

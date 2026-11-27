@@ -1,6 +1,8 @@
 import Image from "next/image";
 import ClinicCard from "./components/ClinicCard";
 import ContactForm from "./components/ContactForm";
+import FaqSection from "./components/FaqSection";
+import { faqGroups } from "./faq";
 
 const services = [
   {
@@ -66,6 +68,7 @@ const siteUrl = "https://corilucas.ca";
 const ids = {
   website: `${siteUrl}/#website`,
   webpage: `${siteUrl}/#webpage`,
+  faq: `${siteUrl}/#faq`,
   person: `${siteUrl}/#cori-lucas`,
   practice: `${siteUrl}/#practice`,
   coralCove: `${siteUrl}/#coral-cove`,
@@ -109,7 +112,7 @@ const jsonLd = {
         "credentialCategory": "Professional License",
         "recognizedBy": {
           "@type": "Organization",
-          "name": "Association of Traditional Chinese Medicine and Acupuncturists of Nova Scotia",
+          "name": "Acupuncture & Traditional Chinese Medicine Association of Nova Scotia",
           "alternateName": "ATCMANS",
         },
       },
@@ -140,6 +143,20 @@ const jsonLd = {
         "name": service.name,
         "description": service.description,
       })),
+    },
+    {
+      "@type": "FAQPage",
+      "@id": ids.faq,
+      "url": `${siteUrl}/#faq`,
+      "isPartOf": { "@id": ids.webpage },
+      "inLanguage": "en-CA",
+      "mainEntity": faqGroups.flatMap((group) =>
+        group.items.map((item) => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": { "@type": "Answer", "text": item.answer },
+        })),
+      ),
     },
     ...[
       { id: ids.coralCove, clinic: clinics[0], telephone: "+1-902-420-0033" },
@@ -190,6 +207,7 @@ export default function Home() {
               <li><a href="#about" className="hover:text-sage transition-colors">About</a></li>
               <li><a href="#services" className="hover:text-sage transition-colors">Services</a></li>
               <li><a href="#booking" className="hover:text-sage transition-colors">Book</a></li>
+              <li><a href="#faq" className="hover:text-sage transition-colors">FAQ</a></li>
               <li><a href="#contact" className="hover:text-sage transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -255,8 +273,8 @@ export default function Home() {
                   <p>
                     Cori Lucas is a Registered Acupuncturist holding a 2200-hour certification from
                     the College of Acupuncture and Traditional Chinese Medicine in Bedford, Nova
-                    Scotia, and is a member of the Association of Traditional Chinese Medicine and
-                    Acupuncturists of Nova Scotia (ATCMANS).
+                    Scotia, and is a member of the Acupuncture &amp; Traditional Chinese Medicine
+                    Association of Nova Scotia (ATCMANS).
                   </p>
                   <p>
                     Her journey into Traditional Chinese Medicine began through her own transformative
@@ -341,6 +359,8 @@ export default function Home() {
               </ul>
             </div>
           </section>
+          <FaqSection groups={faqGroups} />
+
           {/* Contact */}
           <section
             id="contact"
