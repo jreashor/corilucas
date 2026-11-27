@@ -19,7 +19,7 @@ export default function FaqSection({ groups }: { groups: FaqGroup[] }) {
               </h3>
               <div className="border-t border-border">
                 {group.items.map((item) => (
-                  <details key={item.question} className="group border-b border-border">
+                  <details key={item.question} name="faq" className="group border-b border-border">
                     <summary className="flex items-center justify-between gap-4 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage-dark">
                       <span className="font-medium text-lg">{item.question}</span>
                       <span
