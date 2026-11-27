@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# corilucas.ca
 
-## Getting Started
+Website for Cori Lucas R.Ac, a Registered Acupuncturist in Halifax and Hammonds Plains, Nova Scotia. It is a single-page [Next.js](https://nextjs.org) site (App Router, Tailwind CSS) with booking links for two clinics and a contact form.
 
-First, run the development server:
+## Getting started
+
+Use the Node version in `.nvmrc` (24) and pnpm (the version is pinned in `package.json`, so Corepack will pick it up):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The page lives in `src/app/page.tsx` and updates as you edit it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm build   # production build
+pnpm start   # serve the production build
+pnpm lint    # ESLint
+```
 
-## Learn More
+## Project layout
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/page.tsx` — the home page, plus the `services` and `clinics` data and the JSON-LD graph built from them.
+- `src/app/components/` — `ClinicCard` (booking card) and `ContactForm`.
+- `src/app/layout.tsx` — site metadata, Open Graph and Twitter card.
+- `src/app/robots.ts` and `src/app/sitemap.ts` — crawler rules and sitemap.
+- `public/llms.txt` — summary of the site for AI crawlers.
+- `public/__forms.html` — hidden static form that registers the contact form with Netlify.
+- `public/images/` — site images. New photos must be CC0 or public domain.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+When services, clinics, phone numbers or credentials change, update the page, the JSON-LD and `public/llms.txt` together so they match.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The site is hosted on [Netlify](https://www.netlify.com) at [corilucas.ca](https://corilucas.ca). Netlify deploys `main`; work is verified locally (build, lint, browser check) and merged straight to `main`, with no deploy-preview or staging step. There is no `netlify.toml`, so the build command, environment variables and domain settings are managed in the Netlify dashboard. DNS is managed at Hover, not Netlify.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The contact form posts to Netlify Forms. `public/__forms.html` declares the form so Netlify can detect it at build time, and its field names must stay in sync with `src/app/components/ContactForm.tsx`. Form detection must be enabled in the Netlify dashboard, and submissions appear there under Forms.
+
+## Project knowledge
+
+Conventions and context for working on this repo are kept in [`.ai/kenkeep/`](.ai/kenkeep/ENTRY.md), a small knowledge base used by AI coding agents (see `AGENTS.md`).

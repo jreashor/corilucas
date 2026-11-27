@@ -19,5 +19,3 @@ kk_confidence: high
 The production site is hosted on Netlify and served at the custom domain `corilucas.ca`. The domain is registered and its DNS is managed at Hover (nameservers `ns1/ns2.hover.com`), with the apex record pointing at Netlify's load balancer.
 
 The repo contains no `netlify.toml` or other deploy config, so the build command, environment variables and domain settings are managed in the Netlify dashboard. DNS changes are made at Hover, not Netlify.
-
-The README's "Deploy on Vercel" section is leftover Create Next App boilerplate and does not reflect where the site runs.
